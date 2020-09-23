@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="CSS/style km to metres.css" />
+
+<h1 class="title">Kilometres to Metres and Vice versa</h1><br>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+<select id="dropdown" class="form-control form-control-lg" required>
+    <option value="kilometrestometres">Convert kilometres to metres</option> 
+     <option value="metrestokilometres">Convert metres to kilometres</option>
+   </select> <br>
+</div>
+<div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <label id="enterkilometres">
+            <input class="input form-control form-control-lg" id="numInput" name="kilometres" type="number"
+                placeholder="type number in km/m" required />
+    </div>
+<div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    
+    <div class="col-md-8 form-group">
+        <button type="button" class="btn btn-primary form-control form-control" onclick="convertKilometres()"
+            id="convert">Clck To Convert</button></br>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8 alert alert-success">
+        <p id="output">Metres / Kilometres</p></br>
+    </div>
+
+    <div class="col-md-2"></div>
+</div>
+<script src="style_km_to_metres.js"></script>
